@@ -36,6 +36,103 @@ This assignment aims to familiarize you with the tools and configurations necess
 9. Document Your Setup:
     Create a comprehensive document outlining the steps you've taken to set up your developer environment. Include any configurations, customizations, or troubleshooting steps encountered during the process. 
 
+
+    Introduction
+This document provided a step-by-step guide to setting up a development environment. The setup included installing Windows 11, Visual Studio Code (VS Code), Git, Python, pip, MySQL, Docker (optional), and configuring various extensions and plugins for an enhanced coding experience.
+
+Operating System: Windows 11 Installation
+Steps:
+The Windows 11 download page was visited.
+The installation media tool was downloaded.
+The tool was run, and the on-screen instructions were followed to create a bootable USB drive or upgrade the current system.
+The computer was restarted, and it booted from the USB drive for a clean installation.
+The prompts were followed to complete the Windows 11 installation.
+
+IDE Installation: Visual Studio Code (VS Code)
+Steps:
+The VS Code download page was visited.
+The appropriate version for Windows was selected and the installer was downloaded.
+The installer was run, and the prompts were followed to install VS Code.
+VS Code was launched after installation.
+
+Version Control: Git Installation and Configuration
+Steps:
+The Git download page was visited.
+The installer for Windows was downloaded.
+The installer was run, and the prompts were followed to install Git.
+Git Bash was opened, and the user name and email were configured:
+sh
+Copy code
+git config --global user.name "Abigael Jeruto"
+git config --global user.email "jeruto37@gmail.com"
+GitHub Setup:
+GitHub was visited and an account was created.
+A new repository was created.
+A local Git repository was initialized and pushed to GitHub:
+
+mkdir my-project
+cd my-project
+git init
+touch README.md
+git add README.md
+git commit -m "Initial commit"
+git remote add origin https://github.com/AbbieMutzie/my-project.git
+git push -u origin master
+
+
+Programming Languages: Python Installation
+Steps:
+The Python download page was visited.
+The installer for the latest version of Python was downloaded.
+The installer was run, and the option to add Python to the PATH was checked.
+The prompts were followed to complete the installation.
+
+Package Managers: pip Installation
+Steps:
+Since pip is installed by default with Python, the following command was run to ensure it was installed and updated:
+sh
+Copy code
+python -m ensurepip --upgrade
+
+Database Configuration: MySQL Installation
+Steps:
+The MySQL download page was visited.
+The MySQL Installer for Windows was downloaded.
+The installer was run, and the prompts were followed to install MySQL.
+MySQL was configured as needed during the installation process.
+
+Development Environments: Docker Installation (Optional)
+Steps:
+The Docker download page was visited.
+Docker Desktop for Windows was downloaded.
+The installer was run, and the prompts were followed to install Docker.
+Docker Desktop was launched and the initialization steps were followed.
+
+Extensions and Plugins: VS Code Extensions
+Recommended Extensions:
+Python: For Python development.
+GitLens: Enhances Git capabilities.
+Prettier: Code formatter.
+Docker: Support for Docker.
+Steps:
+VS Code was opened.
+The Extensions view was accessed by clicking the Extensions icon in the Activity Bar on the side of the window.
+The desired extensions were searched for and "Install" was clicked.
+
+Challenges and Solutions
+Challenges:
+Issue: Difficulty in setting up Git and GitHub integration.
+
+Solution: The official documentation and tutorials for Git and GitHub were followed. SSH keys were correctly configured for secure authentication.
+Issue: Python not recognized in command line.
+
+Solution: It was ensured that Python was added to PATH during installation. Python was manually added to PATH if necessary.
+Issue: MySQL installation errors.
+
+Solution: Conflicting installations or permissions were checked. MySQL community forums were consulted for specific error resolutions.
+Reflection:
+Setting up a development environment was challenging, especially with compatibility issues and configuration errors. However, following detailed guides and official documentation significantly reduced setup time and ensured a smooth development process.
+
 #Deliverables:
 - Document detailing the setup process with step-by-step instructions and screenshots where necessary.
 - A GitHub repository containing a sample project initialized with Git and any necessary configuration files (e.g., .gitignore).
